@@ -13,9 +13,9 @@ Global Css
 
 
 body{
-    font-family: 'Poppins', sans-serif;
-    font-size:large;
-    font-weight:500;
+    font-family: "Poppins";
+    font-size:xx-large;
+    font-weight:300;
     overflow-x: hidden;
     background-color: #ffffff;
 }
