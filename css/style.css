@@ -222,8 +222,11 @@ img {
 }
 /*Services section design*/
 .services {
-  background: #111;
+  background:black;
 }
+
+ 
+
 .services .white {
   color: #fff;
 }
@@ -509,3 +512,18 @@ img {
     padding: 100px 20px;
   }
 }
+
+
+
+
+.swiper-container {
+  width: 350px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide{
+  width: 300px;
+}
+
+
+

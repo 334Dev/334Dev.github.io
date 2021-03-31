@@ -8,21 +8,39 @@
 <!-- 
   <link rel="stylesheet" href="css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="css/style.css">
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+
   <script src="js/main.js"></script>
   <title>Dev334</title>
 </head>
 
 <body>
+
+
+
   <header>
 <a href="#" class="logo">Dev334</a>
 <div class="toggle" onclick="toggleMenu();"></div>
 <ul class="menu">
 <li><a href="#home" onclick="toggleMenu();">Home</a></li>
 <li><a href="#about" onclick="toggleMenu();">About</a></li>
-<li><a href="#services" onclick="toggleMenu();">Services</a></li>
+<li><a href="#services" onclick="toggleMenu();">Projects</a></li>
 <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
 </ul>
 </header>
+
+
+
+
 <section class="banner" id="home">
 <div class="text-banner">
   <h3>Hello, We are Dev334</h3>
@@ -31,6 +49,10 @@
   <a href="#work" class="btn">OUR WORK</a>
 </div>
 </section>
+
+
+
+
 <section id="about">
   <div class="container">
     <div class="imgx" ></div>
@@ -57,40 +79,48 @@
 
 
 </section>
+
+
+
+
+
 <section class="services" id="services">
 <div class="heading white">
-  <h2>Services</h2>
-  <p>In one sentence, create simple HTML/CSS landing page</p>
+  <h1>Projects</h1>
+  <p>Some of our past projects</p>
 </div>
-<div class="content">
-  <div class="servicesbox">
-    <div class="icon"><i class="fas fa-laptop-code"></i></div>
-    <h2>Web Design</h2>
-    <p>Lorem ipsum dolor sit amet...</p>
-  </div> 
-  <div class="servicesbox">
-    <div class="icon"><i class="fas fa-file-code"></i></div>
-    <h2>Web Development</h2>
-    <p>Lorem ipsum dolor sit amet...</p>
-  </div> 
-  <div class="servicesbox">
-    <div class="icon"><i class="fas fa-database"></i></div>
-    <h2>Data Analysis</h2>
-    <p>Lorem ipsum dolor sit amet...</p>
-  </div> 
-  <div class="servicesbox">
-    <div class="icon"><i class="fas fa-edit"></i></div>
-    <h2>Graphism</h2>
-    <p>Lorem ipsum dolor sit amet...</p>
-  </div> 
-  <div class="servicesbox">
-    <div class="icon"><i class="fas fa-photo-video"></i></div>
-    <h2>Video Editing</h2>
-    <p>Lorem ipsum dolor sit amet...</p>
-  </div> 
+
+  <!-- Slider main container -->
+<div class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/12.jpg" alt="">
+    </div>
+      <div class="swiper-slide">
+          <img src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/10.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+          <img src="http://marveltheme.com/tf/html/appai/appai/img/app-screenshots/11.jpg" alt="">
+      </div>
+      
+  </div>
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
 </div>
-</div>
+
+
 </section>
+
+
+    
+
+
+
+
+
 <section class="contact" id="contact">
 <div class="heading white">
   <h2>Contact Me</h2>
@@ -134,7 +164,38 @@
 </div>
 </section>
 <div class="copyright">
-Copyright 2020 © Dev334. All Rights Reserved
+Copyright 2021 © Dev334. All Rights Reserved
 </div>
+
+
+
+<script id="rendered-js">
+  var mySwiper = new Swiper('.swiper-container', {
+    loop: true,
+    speed: 1000,
+    autoplay: {
+        delay: 3000,
+    },
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 80,
+        depth: 200,
+        modifier: 1,
+        slideShadows: false,
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+})
+      </script>
+
 </body>
 </html>
