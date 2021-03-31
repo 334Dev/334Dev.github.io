@@ -517,13 +517,18 @@ img {
 
 
 .swiper-container {
-  width: 350px;
+  width: 750px;
   padding-top: 50px;
   padding-bottom: 50px;
+  
 }
 .swiper-slide{
-  width: 300px;
+  width: 300px i !important;
+
 }
+
+
+
 
 
 
